@@ -1,0 +1,102 @@
+<div class="container">
+    <div class="row">
+        <fieldset>
+            <legend>Update Product</legend>
+            <div class="row mt-3">
+                <div class="col-3">
+                    <label for="name">Name</label>
+                    <input [(ngModel)]="productObj.name" type="text" id="name" name="name" class="form-control" placeholder="Enter Product Name">
+                </div>
+
+                <div class="col-3">
+                    <label for="productNumber">Product Number</label>
+                    <input [(ngModel)]="productObj.productNumber" type="text" id="productNumber" name="productNumber" class="form-control" placeholder="Enter Product Number">
+                </div>
+
+                <div class="col-3">
+                    <label for="color">Color</label>
+                    <input [(ngModel)]="productObj.color" type="text" id="color" name="color" class="form-control" placeholder="Enter Color">
+                </div>
+
+                <div class="col-3">
+                    <label for="size">Size</label>
+                    <input [(ngModel)]="productObj.size" type="number" id="size" name="size" class="form-control" >
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-3">
+                    <label for="standardCost">Standard Cost</label>
+                    <input [(ngModel)]="productObj.standardCost" type="number" id="standardCost" name="standardCost" class="form-control">
+                </div>
+
+                <div class="col-3">
+                    <label for="listPrice">List Price</label>
+                    <input [(ngModel)]="productObj.listPrice" type="number" id="listPrice" name="listPrice" class="form-control">
+                </div>
+
+                <div class="col-3">
+                    <label for="weight">Weight</label>
+                    <input [(ngModel)]="productObj.weight" type="number" id="weight" name="weight" class="form-control">
+                </div>
+
+                <div class="col-3 ">
+                    <button (click)="addProduct()" class="btn btn-primary mt-3">Add Product</button>
+                </div>
+            </div>
+        </fieldset>
+
+        <div *ngIf="productList.length>0">
+           <fieldset>
+             <legend>Product List</legend>
+             <div class="row mt-3">
+              <table class="table table-bordered table-striped">
+               <thead>
+                <tr>           
+                    <th>Product Name</th>
+                    <th>Product Number</th>
+                    <th>Color</th>
+                    <th>Standard Cost</th>
+                    <th>List Price</th>
+                    <th>Size</th>
+                    <th>Weight</th>
+                    <th>Action</th>
+                </tr>
+               </thead>
+               <tbody>
+             
+                   <tr *ngFor="let item of productList">                 
+                    <td>{{item.name}}</td>
+                    <td>{{item.productNumber}}</td>
+                    <td>{{item.color}}</td>
+                    <td>{{item.standardCost}}</td>
+                    <td>{{item.listPrice}}</td>                               
+                    <td>{{item.size}}</td>
+                    <td>{{item.weight}}</td>
+                    <td>
+                     <button (click)="deleteProduct(item,productList)" class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                   </tr>
+                
+             </tbody>
+              </table>
+             </div>
+           </fieldset>
+        </div>
+
+        <fieldset>
+            <legend>Product Category</legend>
+            <div class="row mt-3">
+                <div class="col-9">
+                    <label for="CategoryName">CategoryName</label>
+                    <input [(ngModel)]="productCategory.name" type="text"  name="name" class="form-control">
+                </div>
+
+                <div class="col-3 ">
+                    <button (click)="updateProductCategory()" type="button" class="btn btn-primary mt-3">Update Product Category</button>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
