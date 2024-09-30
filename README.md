@@ -1,27 +1,86 @@
-# ProductApp
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductApp README</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        code {
+            background-color: #e7e7e7;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #e7e7e7;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+    <h1>ProductApp</h1>
 
-## Development server
+    <p>This project was generated with <a href="https://github.com/angular/angular-cli" target="_blank">Angular CLI</a> version 18.2.0.</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+    <h2>Development Server</h2>
+    <p>To start the development server, run:</p>
+    <pre><code>ng serve</code></pre>
+    <p>Navigate to <a href="http://localhost:4200" target="_blank">http://localhost:4200/</a> in your browser. The application will automatically reload if you make any changes to the source files.</p>
 
-## Code scaffolding
+    <h2>Code Scaffolding</h2>
+    <p>To generate a new component, run:</p>
+    <pre><code>ng generate component component-name</code></pre>
+    <p>You can also use the following commands to generate other Angular building blocks:</p>
+    <ul>
+        <li>Directive: <code>ng generate directive directive-name</code></li>
+        <li>Pipe: <code>ng generate pipe pipe-name</code></li>
+        <li>Service: <code>ng generate service service-name</code></li>
+        <li>Class: <code>ng generate class class-name</code></li>
+        <li>Guard: <code>ng generate guard guard-name</code></li>
+        <li>Interface: <code>ng generate interface interface-name</code></li>
+        <li>Enum: <code>ng generate enum enum-name</code></li>
+        <li>Module: <code>ng generate module module-name</code></li>
+    </ul>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    <h2>Build</h2>
+    <p>To build the project, run:</p>
+    <pre><code>ng build</code></pre>
+    <p>The build artifacts will be stored in the <code>dist/</code> directory.</p>
 
-## Build
+    <h2>Running Unit Tests</h2>
+    <p>To execute the unit tests via <a href="https://karma-runner.github.io" target="_blank">Karma</a>, run:</p>
+    <pre><code>ng test</code></pre>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    <h2>Running End-to-End Tests</h2>
+    <p>To execute the end-to-end tests, first add a package that implements end-to-end testing capabilities (such as <code>@angular-devkit/build-angular</code>), then run:</p>
+    <pre><code>ng e2e</code></pre>
 
-## Running unit tests
+    <h2>Further Help</h2>
+    <p>For more help on the Angular CLI, use:</p>
+    <pre><code>ng help</code></pre>
+    <p>Or check out the <a href="https://angular.dev/tools/cli" target="_blank">Angular CLI Overview and Command Reference</a> page.</p>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    <h2>License</h2>
+    <p>This project is licensed under the MIT License - see the <code>LICENSE</code> file for details.</p>
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+</body>
+</html>
