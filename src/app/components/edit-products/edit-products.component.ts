@@ -68,6 +68,7 @@ export class EditProductsComponent implements OnInit{
       next:()=>{
         alert("Update Successfully");
         // this.route
+        this.router.navigate(['/products']);
       }
     })
   }
